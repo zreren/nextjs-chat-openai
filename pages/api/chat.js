@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       });
       const openai = new OpenAIApi(configuration);
       const response = await openai.createCompletion({
-        model: "text-davinci-003",
+        model: "gpt-3.5-turbo",
         prompt: chat,
         temperature: 0,
         max_tokens: 500,
